@@ -175,12 +175,29 @@ export const COPY = {
       id: "Manajemen keluarga yang menghidupkan setiap peran.",
     } as LText,
     teamSub: {
-      ja: "PATO SAN、Rismah、そしてFirda Kirana Isnan。それぞれの役割と強みを生かしながら、企業としての責任を大切にし、将来を見据えた事業の発展に取り組んでいます。",
-      id: "PATO SAN, Rismah, dan Firda Kirana Isnan — masing-masing menghidupkan peran dan kekuatannya demi tanggung jawab perusahaan serta perkembangan bisnis yang berorientasi masa depan.",
+      ja: "Firda Kirana Isnan、PATO SAN、そしてRismah。それぞれの役割と強みを生かしながら、企業としての責任を大切にし、将来を見据えた事業の発展に取り組んでいます。",
+      id: "Firda Kirana Isnan, PATO SAN, dan Rismah — masing-masing menghidupkan peran dan kekuatannya demi tanggung jawab perusahaan serta perkembangan bisnis yang berorientasi masa depan.",
+    } as LText,
+    ownerLabel: { ja: "オーナーの歩みと理念", id: "Latar Belakang Pemilik" } as LText,
+    ownerHeading: {
+      ja: "信頼の礎を受け継ぎ、未来の可能性を切り拓く。",
+      id: "Mewarisi Fondasi Kepercayaan, Membuka Peluang Masa Depan.",
+    } as LText,
+    ownerBody: {
+      ja: "DAIWA Japanは、日本とインドネシアをつなぐ架け橋として、家族の信頼と誠実さを根底に歩みを進めてきました。Firda Kirana Isnanは、創業者の理念と確かな事業基盤を受け継ぎながら、次世代ならではの新しい視点とグローバルな感性を取り入れ、お客様一人ひとりに寄り添う持続可能な価値創造を推進しています。",
+      id: "DAIWA Japan didirikan dengan fondasi integritas, kejujuran, dan kehangatan keluarga. Sebagai generasi penerus bisnis, Firda Kirana Isnan memadukan pemahaman budaya Jepang dengan wawasan masa depan, memastikan setiap mitra dan klien merasakan layanan properti yang aman, transparan, dan berorientasi jangka panjang.",
     } as LText,
   },
 
   members: [
+    {
+      name: "Firda Kirana Isnan — フィルダ・キラナ・イスナン",
+      role: { ja: "次世代の経営メンバー", id: "Anggota Generasi Penerus Bisnis" } as LText,
+      bio: {
+        ja: "次世代の視点と新しい発想を大切にし、企業の将来に向けた成長と新たな可能性の創出を目指しています。",
+        id: "Mengutamakan perspektif generasi baru dan gagasan inovatif untuk mendukung pertumbuhan masa depan serta membuka peluang baru bagi perusahaan.",
+      } as LText,
+    },
     {
       name: "PATO SAN — パト・サン",
       role: { ja: "創業者・経営責任者", id: "Pendiri dan Penanggung Jawab Perusahaan" } as LText,
@@ -195,14 +212,6 @@ export const COPY = {
       bio: {
         ja: "家族の絆と企業理念を大切にしながら、会社の安定した発展と長期的な成長を支えています。",
         id: "Menjunjung nilai kekeluargaan dan visi perusahaan serta mendukung kestabilan dan pertumbuhan jangka panjang bisnis.",
-      } as LText,
-    },
-    {
-      name: "Firda Kirana Isnan — フィルダ・キラナ・イスナン",
-      role: { ja: "次世代の経営メンバー", id: "Anggota Generasi Penerus Bisnis" } as LText,
-      bio: {
-        ja: "次世代の視点と新しい発想を大切にし、企業の将来に向けた成長と新たな可能性の創出を目指しています。",
-        id: "Mengutamakan perspektif generasi baru dan gagasan inovatif untuk mendukung pertumbuhan masa depan serta membuka peluang baru bagi perusahaan.",
       } as LText,
     },
   ],
@@ -253,10 +262,6 @@ export const COPY = {
       ja: "写真をクリックすると拡大表示されます。",
       id: "Klik foto untuk memperbesar tampilan.",
     } as LText,
-    galleryNote: {
-      ja: "※ 掲載写真はイメージです。",
-      id: "* Foto yang ditampilkan bersifat ilustrasi.",
-    } as LText,
   },
 
   gallery: [
@@ -289,10 +294,6 @@ export const COPY = {
       ja: "株式会社DAIWA Japanの基本情報です。",
       id: "Informasi dasar mengenai DAIWA Japan.",
     } as LText,
-    demoNote: {
-      ja: "※ 現在掲載中のデータはデモです。正式な情報をお知らせいただき次第、差し替えます。",
-      id: "* Data yang ditampilkan masih contoh (demo) dan akan segera diganti setelah data resmi tersedia.",
-    } as LText,
     rows: [
       {
         labelJa: "会社名",
@@ -303,8 +304,8 @@ export const COPY = {
       {
         labelJa: "本社所在地",
         labelId: "Alamat kantor di Jepang",
-        valueJa: "〒105-0011 東京都港区芝公園2-11-1",
-        valueId: "Shibakoen 2-11-1, Minato-ku, Tokyo 105-0011",
+        valueJa: "〒107-0061 東京都港区北青山3丁目15-5 1F DAIWA Apparel Showroom",
+        valueId: "Jepang, 〒107-0061 Tokyo, Minato City, Kita-Aoyama, 3 Chome−15−5 1F DAIWA Apparel Showroom",
       },
       {
         labelJa: "設立年月日",
@@ -333,8 +334,8 @@ export const COPY = {
       {
         labelJa: "お問い合わせ",
         labelId: "Kontak perusahaan",
-        valueJa: "info@daiwajapan.jp / 03-1234-5678",
-        valueId: "info@daiwajapan.jp / 03-1234-5678",
+        valueJa: "Kirana07kirana@gmail.com / 0811-1111-1271",
+        valueId: "Kirana07kirana@gmail.com / 0811-1111-1271",
       },
       {
         labelJa: "主要事業",
@@ -360,8 +361,8 @@ export const COPY = {
     telLabel: { ja: "電話", id: "Telepon" } as LText,
     addressLabel: { ja: "所在地", id: "Alamat" } as LText,
     address: {
-      ja: "〒105-0011 東京都港区芝公園2-11-1",
-      id: "Shibakoen 2-11-1, Minato-ku, Tokyo 105-0011",
+      ja: "〒107-0061 東京都港区北青山3丁目15-5 1F DAIWA Apparel Showroom",
+      id: "Jepang, 〒107-0061 Tokyo, Minato City, Kita-Aoyama, 3 Chome−15−5 1F DAIWA Apparel Showroom",
     } as LText,
     formTitle: { ja: "メッセージを送る", id: "Kirim Pesan" } as LText,
     nameLabel: { ja: "お名前", id: "Nama" } as LText,
@@ -380,10 +381,6 @@ export const COPY = {
       id: "Gagal mengirim. Silakan coba lagi beberapa saat lagi.",
     } as LText,
     mapLabel: { ja: "アクセス", id: "Lokasi" } as LText,
-    demoNote: {
-      ja: "※ 連絡先情報はデモです。正式な情報をお知らせいただき次第、差し替えます。",
-      id: "* Informasi kontak masih contoh (demo) dan akan segera diganti setelah data resmi tersedia.",
-    } as LText,
   },
 
   footer: {

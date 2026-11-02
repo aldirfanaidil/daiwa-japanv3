@@ -62,9 +62,6 @@ function CompanyInfo() {
                   </div>
                 ))}
               </dl>
-              <p className="mt-6 text-xs leading-relaxed text-muted-foreground/80">
-                {t(c.company.demoNote)}
-              </p>
             </Reveal>
 
             <Reveal delay={180}>

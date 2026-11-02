@@ -28,7 +28,7 @@ function About() {
   const t = useT();
   const c = COPY;
 
-  const memberPhotos = [ASSETS.patoSan, ASSETS.rismah, ASSETS.firda];
+  const memberPhotos = [ASSETS.firda, ASSETS.patoSan, ASSETS.rismah];
 
   return (
     <div>
@@ -107,6 +107,33 @@ function About() {
             </h2>
             <p className="mt-6 text-sm leading-loose text-muted-foreground md:text-base">
               {t(c.about.familyBody)}
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* Latar Belakang Pemilik */}
+      <section className="border-b border-border/60 bg-background px-6 py-20 md:py-28">
+        <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
+          <Reveal>
+            <div className="relative overflow-hidden rounded-2xl bg-zinc-950 p-3 shadow-2xl">
+              <img
+                src={ASSETS.kiranaOwnerStory}
+                alt="Firda Kirana Isnan — Latar Belakang Pemilik & Generasi Penerus DAIWA Japan"
+                loading="lazy"
+                className="aspect-[3/4] w-full rounded-xl object-cover object-top"
+              />
+            </div>
+          </Reveal>
+          <Reveal delay={140}>
+            <p className="text-xs font-medium uppercase tracking-[0.35em] text-primary">
+              {t(c.about.ownerLabel)}
+            </p>
+            <h2 className="mt-4 font-display text-2xl font-semibold leading-relaxed tracking-wide md:text-4xl">
+              {t(c.about.ownerHeading)}
+            </h2>
+            <p className="mt-6 text-sm leading-loose text-muted-foreground md:text-base">
+              {t(c.about.ownerBody)}
             </p>
           </Reveal>
         </div>

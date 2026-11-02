@@ -116,7 +116,6 @@ function Services() {
               </Reveal>
             ))}
           </div>
-          <p className="mt-8 text-xs text-muted-foreground">{t(c.services.galleryNote)}</p>
         </div>
       </section>
 

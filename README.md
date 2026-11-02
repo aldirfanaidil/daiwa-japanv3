@@ -1,81 +1,128 @@
-# DAIWA Japan Realty
+# DAIWA Japan — Company Profile Website
 
-[22.12, 1/11/2026] Kak Adi: 会社概要
+> **株式会社DAIWA Japan**  
+> *信頼を築き、価値を創造し、未来へつなぐ。*  
+> *Membangun kepercayaan, menciptakan nilai, dan menghubungkan masa kini dengan masa depan.*
 
-DAIWA Japanは、日本国内における不動産事業を中心に、上質な住環境と新たな資産価値の創造を目指す不動産関連企業です。
+---
 
-私たちは、信頼・誠実・品質を大切にし、お客様一人ひとりのニーズに寄り添いながら、長期的な視点に立った不動産サービスの提供を目指しています。
+## 📖 Tentang Proyek
 
-不動産の取得・売買・賃貸・管理などを通じて、お客様の多様なニーズに応え、安心と満足をお届けすることを大切にしています。
+Website *company profile* resmi untuk **DAIWA Japan** (Tokyo, Jepang), perusahaan real estat yang memadukan profesionalisme properti dengan kehangatan nilai keluarga. Website ini dirancang dengan gaya *Modern Minimalist* yang rapi, tipografi Jepang yang elegan, ruang kosong (*white space*) luas, dan sistem dwibahasa penuh (Jepang & Indonesia).
 
-また、変化する不動産市場を的確に捉え、持続可能な成長と新たなビジネス機会の創出に取り組んでまいります。
+---
 
-DAIWA Japanは、信頼を基盤とした事業活動を通じて、お客様、パートナー企業、そして社会とともに成長し続ける企業を目指します。
+## ✨ Fitur Utama
 
-[22.12, 1/11/2026] Kak Adi: 家族の絆と経営理念
+- **🌐 Sistem Dwibahasa (Bilingual JP / ID):**
+  - Tombol pengalih bahasa instan di *header* (JP / ID).
+  - Seluruh teks halaman dan navigasi tersedia lengkap dalam bahasa Jepang dan Indonesia.
+  - Preferensi bahasa otomatis tersimpan di peramban (`localStorage`).
 
-DAIWA Japanは、家族の信頼と絆を大切にしながら、長期的な視野で事業の発展を目指しています。
+- **📑 5 Halaman Lengkap Sesuai Rancang Bangun:**
+  1. **Beranda (`/`):** *Hero banner* gedung pencakar langit Tokyo, pengenalan DAIWA Japan, 3 pilar utama (Properti, Keluarga, Kepercayaan), dan ajakan bertindak (CTA).
+  2. **Tentang Kami (`/about`):** Filosofi perusahaan (Visi, Misi, 5 Nilai Utama), kisah kekeluargaan, serta profil manajemen (PATO SAN, Rismah, dan Firda Kirana Isnan sebagai generasi penerus).
+  3. **Layanan & Portofolio (`/services`):** Penjelasan 4 layanan (Perolehan & Jual Beli, Sewa, Manajemen Properti, Konsultasi) serta galeri portofolio properti.
+  4. **Informasi Perusahaan (`/company-info`):** Tabel legalitas resmi (Tahun pendirian, modal, izin usaha properti/Takken, alamat kantor pusat di Tokyo).
+  5. **Kontak (`/contact`):** Informasi alamat kantor di Jepang, nomor telepon, email resmi, peta interaktif Google Maps, dan formulir komunikasi.
 
-PATO SANとRismahは、誠実さ、責任感、そして信頼関係を企業経営の重要な基盤と考えています。
+- **🖼️ Galeri Interaktif (Lightbox):**
+  - Setiap foto portofolio gedung dapat diklik untuk dibuka dalam tampilan *lightbox* layar penuh dengan latar belakang gelap, navigasi *next/prev*, dan keterangan detail.
 
-Firda Kirana Isnanは、次世代を担う存在として、新しい視点やアイデアを取り入れながら、企業のさらなる発展と未来への可能性を広げることを目指しています。
+- **🎭 Animasi Halus (Scroll Reveal):**
+  - Efek transisi *fade-in* yang elegan saat pengguna menggulir halaman, memberikan kesan premium korporat Jepang.
 
-私たち家族は、互いに支え合いながら、企業としての責任を果たし、お客様や社会から信頼される存在であり続けることを大切にしています。
+- **⚡ Ringan & Mandiri (Database-Free):**
+  - Tidak memerlukan database berat atau langganan server bulanan.
+  - Formulir kontak memproses input langsung dan dapat dihubungkan ke notifikasi email otomatis (seperti Web3Forms atau Resend) hanya dengan memasukkan API key di `.env`.
 
-[22.12, 1/11/2026] Kak Adi: DAIWA Japan — 信頼と家族の絆を大切に
+---
 
-私たちDAIWA Japanは、家族の絆と信頼を大切にし、不動産事業を通じて新たな価値の創造を目指しています。
+## 🛠️ Teknologi yang Digunakan
 
-PATO SAN、Rismah、そしてFirda Kirana Isnan。私たちは、それぞれの役割と強みを生かしながら、企業としての責任を大切にし、将来を見据えた事業の発展に取り組んでいます。
+- **Framework:** [TanStack Start](https://tanstack.com/start) & [TanStack Router](https://tanstack.com/router)
+- **UI Library:** [React 19](https://react.dev)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com)
+- **Ikon:** [Lucide React](https://lucide.dev)
+- **Tipografi:** Google Fonts (*Shippori Mincho* & *Zen Kaku Gothic New*)
+- **Bahasa:** [TypeScript](https://www.typescriptlang.org)
+- **Build Engine:** [Vite 8](https://vitejs.dev) & [Nitro](https://nitro.build)
 
-誠実な姿勢、確かな信頼関係、そして長期的な視野を経営の基本とし、お客様とパートナーの皆様に安心していただけるサービスの提供を目指しています。
+---
 
-これからも日本の不動産市場と向き合いながら、新たな可能性を探求し、持続的な成長を目指してまいります。
+## 📁 Struktur Direktori
 
-信頼から始まる価値づくり。家族とともに、未来へ。
-
-[22.12, 1/11/2026] Kak Adi: 企業理念 — Visi dan Misi
-
-企業理念 | Filosofi Perusahaan
-
-信頼を築き、価値を創造し、未来へつなぐ。
-
-Membangun kepercayaan, menciptakan nilai, dan menghubungkan masa kini dengan masa depan.
-
-ビジョン — Visi
-
-日本の不動産分野において、信頼と品質を重視し、持続可能な成長を目指す企業となること。
-
-Menjadi perusahaan yang mengutamakan kepercayaan dan kualitas serta mengupayakan pertumbuhan berkelanjutan di sektor properti Jepang.
-
-ミッション — Misi
-
-お客様のニーズに真摯に向き合い、誠実なサービスと長期的な視点で不動産の価値向上に取り組むこと。
-
-Memahami kebutuhan pelanggan dengan sungguh-sungguh serta meningkatkan nilai properti melalui layanan yang jujur dan berorientasi jangka panjang.
-
-大切にする価値観 — Nilai Utama
-
-信頼 — Kepercayaan
-
-誠実 — Integritas
-
-責任 — Tanggung jawab
-
-品質 — Kualitas
-
-持続可能な成長 — Pertumbuhan berkelanjutan
-
-
-tolong buatkan saya web profile sesuai dengan penjelasan yang saya kirim untuk konsepnyan, trus deskripsinya sudah saya kirim juga, dan ada beberapa gambar pendukung yang saya kirim beserta info" yang dibutuhkan
-
-## Development
-
-Untuk menjalankan proyek secara lokal:
-
-```sh
-npm install
-npm run dev
 ```
+daiwa-japan/
+├── public/                 # Asset statis publik (favicon, robots.txt)
+├── src/
+│   ├── assets/             # Foto lokal resmi (manajemen, keluarga, arsitektur)
+│   ├── components/         # Komponen UI (site-header, site-footer, lightbox, reveal)
+│   ├── hooks/              # Custom React hooks (use-mobile, dll)
+│   ├── lib/                # Konfigurasi i18n, salinan teks JP/ID, utilities
+│   ├── routes/             # Rute halaman (index, about, services, company-info, contact)
+│   │   └── api/public/     # Endpoint API pengiriman formulir kontak
+│   ├── router.tsx          # Konfigurasi TanStack Router
+│   ├── server.ts           # SSR Server entry
+│   ├── start.ts            # TanStack Start instance configuration
+│   └── styles.css          # Desain global & aturan Tailwind CSS
+├── .env                    # Variabel lingkungan
+├── package.json            # Daftar dependensi & scripts
+└── tsconfig.json           # Konfigurasi TypeScript
 ```
-# daiwa-japan
+
+---
+
+## 🚀 Memulai (Local Development)
+
+### Prasyarat
+- [Node.js](https://nodejs.org/) versi 20+ atau yang lebih baru.
+- npm / pnpm / bun.
+
+### Langkah Instalasi
+
+1. **Pasang Dependensi:**
+   ```bash
+   npm install
+   ```
+
+2. **Jalankan Server Pengembangan (Dev):**
+   ```bash
+   npm run dev
+   ```
+   Buka peramban di [http://localhost:3000](http://localhost:3000).
+
+3. **Uji Coba Kode (Unit Test):**
+   ```bash
+   npm run test
+   ```
+
+4. **Build untuk Produksi:**
+   ```bash
+   npm run build
+   ```
+
+5. **Pratinjau Hasil Build:**
+   ```bash
+   npm run preview
+   ```
+
+---
+
+## ⚙️ Konfigurasi Notifikasi Form Kontak (Opsional)
+
+Jika ingin pesan dari formulir kontak langsung masuk ke email Anda secara gratis tanpa server tambahan, buka file `.env` dan tambahkan Access Key dari [Web3Forms](https://web3forms.com/) atau API Key dari [Resend](https://resend.com/):
+
+```env
+# Pilih salah satu (gratis):
+WEB3FORMS_ACCESS_KEY="masukkan-access-key-disini"
+# atau
+RESEND_API_KEY="masukkan-api-key-resend-disini"
+CONTACT_NOTIFICATION_EMAIL="info@daiwajapan.jp"
+```
+
+---
+
+## 📄 Hak Cipta & Kepemilikan
+
+© 2026 **DAIWA Japan** (株式会社DAIWA Japan). Hak cipta dilindungi undang-undang (*All Rights Reserved*).

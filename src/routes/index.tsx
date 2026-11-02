@@ -22,7 +22,9 @@ export const Route = createFileRoute("/")({
           "信頼・誠実・品質を大切にし、日本の不動産を通じて上質な住環境と新たな資産価値を創造します。",
       },
       { property: "og:type", content: "website" },
+      { property: "og:image", content: "/og-image.jpg" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "/og-image.jpg" },
     ],
   }),
   component: Index,
@@ -77,26 +79,48 @@ function Index() {
       {/* Intro */}
       <section className="px-6 py-20 md:py-28">
         <div className="mx-auto max-w-6xl">
-          <Reveal>
-            <p className="text-xs font-medium uppercase tracking-[0.35em] text-muted-foreground">
-              {t(c.intro.label)}
-            </p>
-            <h2 className="mt-4 max-w-3xl font-display text-2xl font-semibold leading-relaxed tracking-wide md:text-4xl">
-              {t(c.intro.heading)}
-            </h2>
-          </Reveal>
-          <Reveal delay={120}>
-            <div className="mt-10 grid gap-10 md:grid-cols-2">
-              <p className="text-sm leading-loose text-muted-foreground md:text-base">
+          <div className="grid items-center gap-12 md:grid-cols-2">
+            <Reveal>
+              <p className="text-xs font-medium uppercase tracking-[0.35em] text-muted-foreground">
+                {t(c.intro.label)}
+              </p>
+              <h2 className="mt-4 font-display text-2xl font-semibold leading-relaxed tracking-wide md:text-4xl">
+                {t(c.intro.heading)}
+              </h2>
+              <p className="mt-8 text-sm leading-loose text-muted-foreground md:text-base">
                 {t(c.intro.body)}
               </p>
-              <div className="flex items-center">
-                <p className="text-sm leading-loose text-muted-foreground md:text-base">
-                  {t(c.intro.body2)}
-                </p>
+              <p className="mt-4 text-sm leading-loose text-muted-foreground md:text-base">
+                {t(c.intro.body2)}
+              </p>
+              <div className="mt-8">
+                <Link
+                  to="/about"
+                  className="inline-flex items-center gap-2 text-sm font-medium tracking-wider text-primary underline underline-offset-8 transition-opacity hover:opacity-80"
+                >
+                  {t(c.hero.ctaAbout)} →
+                </Link>
               </div>
-            </div>
-          </Reveal>
+            </Reveal>
+            <Reveal delay={120}>
+              <div className="overflow-hidden rounded-2xl border border-border/70 bg-card shadow-lg">
+                <img
+                  src={ASSETS.firda}
+                  alt="Firda Kirana Isnan — DAIWA Japan"
+                  loading="lazy"
+                  className="aspect-[4/5] w-full object-cover object-top"
+                />
+                <div className="p-6">
+                  <p className="font-display text-base font-semibold tracking-wide">
+                    Firda Kirana Isnan — フィルダ・キラナ・イスナン
+                  </p>
+                  <p className="mt-1 text-xs tracking-widest text-primary">
+                    DAIWA Japan — 次世代の経営メンバー
+                  </p>
+                </div>
+              </div>
+            </Reveal>
+          </div>
         </div>
       </section>
 

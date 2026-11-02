@@ -33,7 +33,7 @@ export function SiteFooter() {
           </nav>
         </div>
         <div className="mt-12 border-t border-primary-foreground/15 pt-6 text-center text-xs tracking-widest text-primary-foreground/60">
-          © 2026 DAIWA Japan. {COPY.footer.rights[lang]}
+          © 2022 DAIWA Japan. {COPY.footer.rights[lang]}
         </div>
       </div>
     </footer>

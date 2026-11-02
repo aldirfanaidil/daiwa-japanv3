@@ -115,9 +115,6 @@ function Contact() {
                     </div>
                   </li>
                 </ul>
-                <p className="mt-8 text-xs leading-relaxed text-muted-foreground/80">
-                  {t(c.demoNote)}
-                </p>
               </div>
             </Reveal>
 
@@ -204,14 +201,13 @@ function Contact() {
             </h2>
             <div className="mt-6 overflow-hidden rounded-2xl border border-border/70">
               <iframe
-                title="DAIWA Japan office map (demo)"
-                src="https://www.google.com/maps?q=Shibakoen%202-11-1%2C%20Minato-ku%2C%20Tokyo&output=embed"
+                title="DAIWA Japan office map"
+                src="https://www.google.com/maps?q=Tokyo%2C%20Minato%20City%2C%20Kita-Aoyama%2C%203%20Chome%E2%88%9215%E2%88%925&output=embed"
                 className="h-[360px] w-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
             </div>
-            <p className="mt-4 text-xs text-muted-foreground/80">{t(c.demoNote)}</p>
           </Reveal>
         </div>
       </section>
