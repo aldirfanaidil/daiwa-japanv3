@@ -36,91 +36,93 @@ function Index() {
 
   return (
     <div>
-      {/* Hero */}
-      <section className="relative flex min-h-[78vh] items-end overflow-hidden">
-        <img
-          src={ASSETS.hero}
-          alt="東京都心の高層ビル"
-          className="absolute inset-0 h-full w-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/55 to-background/10" />
-        <div className="relative mx-auto w-full max-w-6xl px-6 pb-16 pt-40">
-          <Reveal>
-            <p className="text-xs font-medium uppercase tracking-[0.4em] text-primary">
-              DAIWA Japan
-            </p>
-            <h1 className="mt-4 max-w-3xl font-display text-4xl font-semibold leading-snug tracking-wide text-foreground md:text-6xl">
-              {t(c.hero.title)}
-            </h1>
-            <p className="mt-6 max-w-2xl text-sm leading-loose text-muted-foreground md:text-base">
-              {t(c.hero.subtitle)}
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Link
-                to="/about"
-                className="inline-flex items-center justify-center rounded-full bg-primary px-7 py-3 text-sm tracking-widest text-primary-foreground transition-colors hover:bg-primary/85"
-              >
-                {t(c.hero.ctaAbout)}
-              </Link>
-              <Link
-                to="/services"
-                className="inline-flex items-center justify-center rounded-full border border-foreground/25 bg-background/60 px-7 py-3 text-sm tracking-widest text-foreground backdrop-blur transition-colors hover:border-primary hover:text-primary"
-              >
-                {t(c.hero.ctaServices)}
-              </Link>
+      {/* Hero Section */}
+      <section className="relative overflow-hidden border-b border-border/60 bg-gradient-to-b from-background via-secondary/20 to-background pb-16 pt-8 md:pb-24 md:pt-14">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="grid items-center gap-12 lg:grid-cols-12">
+            {/* Text column */}
+            <div className="order-2 lg:order-1 lg:col-span-7">
+              <Reveal>
+                <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-secondary/80 px-4 py-1.5 text-xs font-medium tracking-[0.25em] text-primary">
+                  <span>DAIWA Japan</span>
+                  <span className="inline-block h-1 w-1 rounded-full bg-primary" />
+                  <span>Tokyo</span>
+                </div>
+                <h1 className="mt-6 font-display text-4xl font-semibold leading-tight tracking-wide text-foreground md:text-6xl">
+                  {t(c.hero.title)}
+                </h1>
+                <p className="mt-6 max-w-xl text-sm leading-loose text-muted-foreground md:text-base">
+                  {t(c.hero.subtitle)}
+                </p>
+                <div className="mt-8 flex flex-wrap gap-4">
+                  <Link
+                    to="/about"
+                    className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3.5 text-sm tracking-widest text-primary-foreground shadow-sm transition-colors hover:bg-primary/85"
+                  >
+                    {t(c.hero.ctaAbout)}
+                  </Link>
+                  <Link
+                    to="/services"
+                    className="inline-flex items-center justify-center rounded-full border border-border bg-background px-8 py-3.5 text-sm tracking-widest text-foreground shadow-sm transition-colors hover:border-primary hover:text-primary"
+                  >
+                    {t(c.hero.ctaServices)}
+                  </Link>
+                </div>
+                <div className="mt-10 flex items-center gap-6 border-t border-border/60 pt-6 text-xs tracking-wider text-muted-foreground">
+                  <div>
+                    <p className="font-semibold text-foreground">Firda Kirana Isnan</p>
+                    <p className="text-[11px] text-muted-foreground/80">DAIWA Japan Leadership</p>
+                  </div>
+                  <div className="h-4 w-px bg-border" />
+                  <div>
+                    <p className="font-semibold text-foreground">Kita-Aoyama, Tokyo</p>
+                    <p className="text-[11px] text-muted-foreground/80">Head Office</p>
+                  </div>
+                </div>
+              </Reveal>
             </div>
-          </Reveal>
+
+            {/* Photo column - Firda Kirana */}
+            <div className="order-1 lg:order-2 lg:col-span-5">
+              <Reveal delay={100}>
+                <div className="relative mx-auto max-w-sm lg:max-w-none">
+                  <div className="overflow-hidden rounded-3xl border border-border/80 bg-white shadow-2xl">
+                    <img
+                      src={ASSETS.firda}
+                      alt="Firda Kirana Isnan — DAIWA Japan"
+                      className="aspect-[3/4] w-full object-cover object-top"
+                    />
+                  </div>
+                </div>
+              </Reveal>
+            </div>
+          </div>
         </div>
-        <span className="absolute bottom-6 right-8 hidden text-[10px] tracking-[0.5em] text-muted-foreground md:block">
-          {t(c.hero.scroll)}
-        </span>
       </section>
 
       {/* Intro */}
       <section className="px-6 py-20 md:py-28">
         <div className="mx-auto max-w-6xl">
-          <div className="grid items-center gap-12 md:grid-cols-2">
-            <Reveal>
-              <p className="text-xs font-medium uppercase tracking-[0.35em] text-muted-foreground">
-                {t(c.intro.label)}
-              </p>
-              <h2 className="mt-4 font-display text-2xl font-semibold leading-relaxed tracking-wide md:text-4xl">
-                {t(c.intro.heading)}
-              </h2>
-              <p className="mt-8 text-sm leading-loose text-muted-foreground md:text-base">
+          <Reveal>
+            <p className="text-xs font-medium uppercase tracking-[0.35em] text-muted-foreground">
+              {t(c.intro.label)}
+            </p>
+            <h2 className="mt-4 max-w-3xl font-display text-2xl font-semibold leading-relaxed tracking-wide md:text-4xl">
+              {t(c.intro.heading)}
+            </h2>
+          </Reveal>
+          <Reveal delay={120}>
+            <div className="mt-10 grid gap-10 md:grid-cols-2">
+              <p className="text-sm leading-loose text-muted-foreground md:text-base">
                 {t(c.intro.body)}
               </p>
-              <p className="mt-4 text-sm leading-loose text-muted-foreground md:text-base">
-                {t(c.intro.body2)}
-              </p>
-              <div className="mt-8">
-                <Link
-                  to="/about"
-                  className="inline-flex items-center gap-2 text-sm font-medium tracking-wider text-primary underline underline-offset-8 transition-opacity hover:opacity-80"
-                >
-                  {t(c.hero.ctaAbout)} →
-                </Link>
+              <div className="flex items-center">
+                <p className="text-sm leading-loose text-muted-foreground md:text-base">
+                  {t(c.intro.body2)}
+                </p>
               </div>
-            </Reveal>
-            <Reveal delay={120}>
-              <div className="overflow-hidden rounded-2xl border border-border/70 bg-card shadow-lg">
-                <img
-                  src={ASSETS.firda}
-                  alt="Firda Kirana Isnan — DAIWA Japan"
-                  loading="lazy"
-                  className="aspect-[4/5] w-full object-cover object-top"
-                />
-                <div className="p-6">
-                  <p className="font-display text-base font-semibold tracking-wide">
-                    Firda Kirana Isnan — フィルダ・キラナ・イスナン
-                  </p>
-                  <p className="mt-1 text-xs tracking-widest text-primary">
-                    DAIWA Japan — 次世代の経営メンバー
-                  </p>
-                </div>
-              </div>
-            </Reveal>
-          </div>
+            </div>
+          </Reveal>
         </div>
       </section>
 

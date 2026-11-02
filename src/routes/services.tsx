@@ -27,7 +27,7 @@ export const Route = createFileRoute("/services")({
 });
 
 const GALLERY_IMAGES: GalleryImage[] = [
-  { src: ASSETS.hero, title: COPY.gallery[0].title, caption: COPY.gallery[0].caption },
+  { src: ASSETS.heroTokyo, title: COPY.gallery[0].title, caption: COPY.gallery[0].caption },
   { src: ASSETS.residence, title: COPY.gallery[1].title, caption: COPY.gallery[1].caption },
   { src: ASSETS.interior, title: COPY.gallery[2].title, caption: COPY.gallery[2].caption },
   { src: ASSETS.office, title: COPY.gallery[3].title, caption: COPY.gallery[3].caption },
