@@ -1,6 +1,7 @@
 import patoSan from "@/assets/pato-san.jpeg";
 import rismah from "@/assets/rismah.jpeg";
 import firda from "@/assets/firda-kirana-isnan.jpeg";
+import kiranaHero from "@/assets/firda-kirana-isnan-utama.png";
 import kiranaOwnerStory from "@/assets/kirana-owner-story.jpeg";
 import heroTokyo from "@/assets/tokyo-tower-dusk.jpeg";
 import family from "@/assets/daiwa-family.jpeg";
@@ -11,10 +12,11 @@ import office from "@/assets/property-office.jpg";
 
 export const ASSETS = {
   firda,
+  kiranaHero,
   patoSan,
   rismah,
   kiranaOwnerStory,
-  hero: firda,
+  hero: kiranaHero,
   heroTokyo,
   family,
   boardroom,

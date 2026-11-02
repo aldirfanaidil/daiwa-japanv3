@@ -37,11 +37,11 @@ function Index() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative overflow-hidden border-b border-border/60 bg-gradient-to-b from-background via-secondary/20 to-background pb-16 pt-8 md:pb-24 md:pt-14">
+      <section className="relative overflow-hidden border-b border-border/60 bg-gradient-to-b from-background via-secondary/20 to-background pb-0 pt-8 md:pt-14">
         <div className="mx-auto max-w-6xl px-6">
-          <div className="grid items-center gap-12 lg:grid-cols-12">
+          <div className="grid items-end gap-8 lg:grid-cols-12">
             {/* Text column */}
-            <div className="order-2 lg:order-1 lg:col-span-7">
+            <div className="order-2 lg:order-1 lg:col-span-6 pb-16 md:pb-24">
               <Reveal>
                 <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-secondary/80 px-4 py-1.5 text-xs font-medium tracking-[0.25em] text-primary">
                   <span>DAIWA Japan</span>
@@ -82,18 +82,46 @@ function Index() {
               </Reveal>
             </div>
 
-            {/* Photo column - Firda Kirana */}
-            <div className="order-1 lg:order-2 lg:col-span-5">
-              <Reveal delay={100}>
-                <div className="relative mx-auto max-w-sm lg:max-w-none">
-                  <div className="overflow-hidden rounded-3xl border border-border/80 bg-white shadow-2xl">
-                    <img
-                      src={ASSETS.firda}
-                      alt="Firda Kirana Isnan — DAIWA Japan"
-                      className="aspect-[3/4] w-full object-cover object-top"
-                    />
-                  </div>
-                </div>
+            {/* Photo column — transparent PNG floating */}
+            <div className="order-1 lg:order-2 lg:col-span-6 relative flex items-end justify-center min-h-[420px] md:min-h-[560px] lg:min-h-[640px]">
+              {/* Kanji watermark — faint, behind photo */}
+              <span
+                aria-hidden="true"
+                className="pointer-events-none select-none absolute inset-0 flex items-center justify-center font-display font-bold leading-none text-primary/[0.045]"
+                style={{ fontSize: "clamp(8rem, 22vw, 18rem)" }}
+              >
+                信頼
+              </span>
+
+              {/* Decorative arch / half-circle behind photo */}
+              <div
+                aria-hidden="true"
+                className="absolute bottom-0 left-1/2 -translate-x-1/2 rounded-t-full bg-primary/[0.07]"
+                style={{ width: "82%", height: "88%" }}
+              />
+
+              {/* Subtle grid lines (architectural motif) */}
+              <svg
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0 h-full w-full opacity-[0.035]"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs>
+                  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" strokeWidth="0.8" />
+                  </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)" className="text-primary" />
+              </svg>
+
+              {/* Transparent PNG — no card, no border, floats directly */}
+              <Reveal delay={80}>
+                <img
+                  src={ASSETS.kiranaHero}
+                  alt="Firda Kirana Isnan — DAIWA Japan"
+                  className="relative z-10 w-full max-w-[340px] md:max-w-[440px] lg:max-w-none object-contain object-bottom drop-shadow-2xl"
+                  style={{ maxHeight: "640px" }}
+                />
               </Reveal>
             </div>
           </div>
