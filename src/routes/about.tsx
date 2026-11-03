@@ -6,19 +6,40 @@ import { Reveal } from "@/components/reveal";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "私たちについて｜DAIWA Japan" },
+      { title: "Firda Kirana Isnan — CEO DAIWA Japan｜私たちについて" },
       {
         name: "description",
         content:
-          "企業理念・ビジョン・ミッション、そして家族経営の経営陣プロフィール。信頼を築き、価値を創造し、未来へつなぐDAIWA Japanの想いをご紹介します。",
+          "Firda Kirana Isnan adalah CEO dan Pendiri DAIWA Japan, perusahaan properti di Tokyo, Jepang. Profil tim manajemen, visi, misi, dan latar belakang perusahaan.",
       },
-      { property: "og:title", content: "私たちについて｜DAIWA Japan" },
+      {
+        name: "keywords",
+        content:
+          "Firda Kirana Isnan, フィルダ キラナ, DAIWA Japan CEO, pendiri DAIWA Japan, Kirana Isnan, properti Tokyo, real estate Japan, 不動産 東京",
+      },
+      { property: "og:title", content: "Firda Kirana Isnan — CEO DAIWA Japan" },
       {
         property: "og:description",
-        content: "信頼を築き、価値を創造し、未来へつなぐ。DAIWA Japanの企業理念と経営陣のご紹介。",
+        content:
+          "Firda Kirana Isnan, CEO & Founder DAIWA Japan. Perusahaan properti Tokyo yang menjunjung kepercayaan dan kejujuran.",
       },
-      { property: "og:type", content: "website" },
+      { property: "og:type", content: "profile" },
+      { property: "og:url", content: "https://firdakiranaisnan.com/about" },
+      {
+        property: "og:image",
+        content: "https://firdakiranaisnan.com/og-image.jpg",
+      },
+      { property: "og:image:alt", content: "Firda Kirana Isnan — CEO DAIWA Japan" },
+      { property: "profile:first_name", content: "Firda Kirana" },
+      { property: "profile:last_name", content: "Isnan" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Firda Kirana Isnan — CEO DAIWA Japan" },
+      {
+        name: "twitter:description",
+        content: "CEO & Founder DAIWA Japan — perusahaan properti Tokyo",
+      },
+      { name: "twitter:image", content: "https://firdakiranaisnan.com/og-image.jpg" },
+      { name: "robots", content: "index, follow" },
     ],
   }),
   component: About,

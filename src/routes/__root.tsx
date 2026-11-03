@@ -14,6 +14,7 @@ import appCss from "../styles.css?url";
 import { LanguageProvider } from "@/lib/i18n";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { OrganizationSchema, PersonSchema, WebsiteSchema } from "@/components/seo-schema";
 
 function NotFoundComponent() {
   return (
@@ -77,16 +78,49 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "DAIWA Japan" },
-      { name: "description", content: "信頼と家族の絆を大切にする不動産企業 DAIWA Japan" },
-      { property: "og:title", content: "DAIWA Japan" },
-      { property: "og:description", content: "信頼と家族の絆を大切にする不動産企業 DAIWA Japan" },
+      { title: "DAIWA Japan｜信頼と誠実の不動産企業 — Tokyo" },
+      {
+        name: "description",
+        content:
+          "DAIWA Japan — Perusahaan properti Tokyo yang didirikan oleh Firda Kirana Isnan. Bergerak di bidang akuisisi, jual-beli, sewa, dan manajemen properti. 信頼・誠実・品質。",
+      },
+      {
+        name: "keywords",
+        content:
+          "DAIWA Japan, Firda Kirana Isnan, Kirana Isnan, フィルダ キラナ イスナン, 大和ジャパン, properti Tokyo, real estate Japan, perusahaan Jepang, 不動産, Tokyo real estate, Kirana Isnan CEO, firdakiranaisnan, CEO DAIWA Japan, pendiri DAIWA Japan",
+      },
+      { name: "author", content: "Firda Kirana Isnan — DAIWA Japan" },
+      { name: "robots", content: "index, follow" },
+      { name: "googlebot", content: "index, follow, max-image-preview:large" },
+      { property: "og:site_name", content: "DAIWA Japan" },
+      { property: "og:title", content: "DAIWA Japan｜信頼と誠実の不動産企業" },
+      {
+        property: "og:description",
+        content:
+          "Perusahaan properti Tokyo yang didirikan oleh Firda Kirana Isnan. Kepercayaan, kejujuran, dan kualitas di industri properti Jepang.",
+      },
       { property: "og:type", content: "website" },
-      { property: "og:image", content: "/og-image.jpg" },
+      { property: "og:url", content: "https://firdakiranaisnan.com" },
+      { property: "og:image", content: "https://firdakiranaisnan.com/og-image.jpg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "Firda Kirana Isnan — DAIWA Japan" },
+      { property: "og:locale", content: "ja_JP" },
+      { property: "og:locale:alternate", content: "id_ID" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: "/og-image.jpg" },
+      { name: "twitter:title", content: "DAIWA Japan｜Firda Kirana Isnan" },
+      {
+        name: "twitter:description",
+        content: "Perusahaan properti Tokyo — kepercayaan & kualitas. 信頼・誠実・品質。",
+      },
+      { name: "twitter:image", content: "https://firdakiranaisnan.com/og-image.jpg" },
+      { name: "twitter:image:alt", content: "Firda Kirana Isnan — DAIWA Japan CEO" },
     ],
     links: [
+      {
+        rel: "canonical",
+        href: "https://firdakiranaisnan.com",
+      },
       {
         rel: "preconnect",
         href: "https://fonts.googleapis.com",
@@ -118,6 +152,10 @@ function RootShell({ children }: { children: ReactNode }) {
     <html lang="ja">
       <head>
         <HeadContent />
+        {/* JSON-LD Structured Data — agar Google kenali DAIWA Japan & Firda Kirana Isnan */}
+        <WebsiteSchema />
+        <OrganizationSchema />
+        <PersonSchema />
       </head>
       <body>
         {children}

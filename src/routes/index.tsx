@@ -6,25 +6,37 @@ import { Reveal } from "@/components/reveal";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "DAIWA Japan｜信頼と家族の絆を大切にする不動産企業" },
+      { title: "DAIWA Japan｜Firda Kirana Isnan — 信頼と誠実の不動産企業 Tokyo" },
       {
         name: "description",
         content:
-          "DAIWA Japanは、信頼・誠実・品質を大切にする不動産関連企業です。不動産の取得・売買・賃貸・管理を通じて、安心と満足をお届けします。",
+          "DAIWA Japan didirikan oleh Firda Kirana Isnan. Perusahaan properti berbasis di Tokyo, Jepang — akuisisi, jual-beli, sewa, dan manajemen properti. 信頼・誠実・品質。",
+      },
+      {
+        name: "keywords",
+        content:
+          "DAIWA Japan, Firda Kirana Isnan, フィルダ キラナ イスナン, 大和ジャパン, properti Jepang, Tokyo real estate, 不動産 東京, perusahaan properti Jepang",
       },
       {
         property: "og:title",
-        content: "DAIWA Japan｜信頼と家族の絆を大切にする不動産企業",
+        content: "DAIWA Japan｜Firda Kirana Isnan — 信頼と誠実の不動産企業",
       },
       {
         property: "og:description",
         content:
-          "信頼・誠実・品質を大切にし、日本の不動産を通じて上質な住環境と新たな資産価値を創造します。",
+          "Perusahaan properti Tokyo yang didirikan Firda Kirana Isnan. Kepercayaan, kejujuran, dan kualitas di industri properti Jepang.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:image", content: "/og-image.jpg" },
+      { property: "og:url", content: "https://firdakiranaisnan.com" },
+      { property: "og:image", content: "https://firdakiranaisnan.com/og-image.jpg" },
+      { property: "og:image:alt", content: "Firda Kirana Isnan — DAIWA Japan" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: "/og-image.jpg" },
+      { name: "twitter:title", content: "DAIWA Japan｜Firda Kirana Isnan" },
+      {
+        name: "twitter:description",
+        content: "Perusahaan properti Tokyo — kepercayaan & kualitas. CEO: Firda Kirana Isnan.",
+      },
+      { name: "twitter:image", content: "https://firdakiranaisnan.com/og-image.jpg" },
     ],
   }),
   component: Index,
